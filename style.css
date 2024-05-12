@@ -48,3 +48,12 @@ iframe{
     height:315px;
     border-radius: 20px;
 }
+#display-area p{
+    font-size: 20px;
+    font-weight: 600;
+    color:#a10627dc ;
+}
+#display-area span{
+    color: white;
+}
+

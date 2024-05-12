@@ -5,19 +5,16 @@ function displaySongInfo() {
     const description = document.getElementById('description').value;
     const year = document.getElementById('year').value;
 
-    // Convert YouTube link to embeddable format
+    // Convert YouTube link to embeddable format "seach on it from youtube"
     const embeddableLink = embedLink(youtubeLink);
 
-    // Update display area with song information
     document.getElementById('displaySongName').textContent = songName;
     document.getElementById('displayDescription').textContent = description;
     document.getElementById('displayYear').textContent = year;
 
-    // Create and append the YouTube video iframe
     const videoContainer = document.getElementById('videoContainer');
-    videoContainer.innerHTML = `<iframe src="${embeddableLink}" ></iframe>`;
+    videoContainer.innerHTML = `<iframe src="${embeddableLink}"  ></iframe>`;
 
-    // Hide the form and show the display area
     document.getElementById('formarea').style.display = 'none';
     document.getElementById('display-area').style.display = 'block';
 
